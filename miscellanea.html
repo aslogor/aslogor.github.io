@@ -13,12 +13,18 @@
 
 <nav class="navbar">
     <ul>
-    <li><a href="index.html">About me</a> 
-    <li><a href="publications.html">Research</a> 
-    <!-- <li><a href="talks.html">Talks</a>  -->
-    <!-- <li><a href="teaching.html">Teaching</a>  -->
-    <li><a href="contact.html">Contact me</a> 
-    <li><a href="miscellanea.html">Miscellanea</a> 
+    <li><a href="index.html">
+    👨🏼‍🎓 About me</a> 
+    <li><a href="publications.html">
+    📄 Research</a> 
+    <li><a href="talks.html">
+    🗣️ Talks</a> 
+    <li><a href="teaching.html">
+    👨🏼‍🏫 Teaching</a> 
+    <li><a href="contact.html">
+    ✉️ Contact me</a> 
+    <li><a class="active" href="miscellanea.html">
+    👨🏼‍💻 Miscellanea</a> 
     </ul>
 </nav>
 
@@ -26,13 +32,57 @@
 
 <h3>Acknowledgements</h3>
 <p>
-    I must thank my friend and colleague <a href="https://jesusaguado.xyz/">Jesús Aguado</a> for encouraging me to build my own website and helping me to setup the server.
+    I must thank my friend and colleague <a href="https://jesusaguado.xyz/">Jesús Aguado</a> for encouraging me to build my own website and for his suggestions. I have also found <a href="https://landchad.net/">LandChad's guide</a> quite helpful. 
 </p>
+
+
+
+<h3>Workflow</h3>
+
+The software I use to work on a daily basis is:
+
+<ul>
+    <li> <b> Operative System: <a href="https://linuxmint.com/">Linux Mint.</a>  </b> 
+     I highly recommend any GNU/Linux distro, or at least an Unix-based OS. Once you get used to it, several tasks can be done much faster and easier using a text-based user interfaces (TUI) instead of a graphic user interface (GUI). In addition, you can easily make your own shell scripts to automate certain tasks. It is also really easy to customize the system at your own liking. By simply editing some config text files, you can perform changes which in Windows or Mac would require a third-party obscure program or would directly be impossible.
+    For instance, I have remapped the Caps Lock key to act as the backslash<sup><a href="#fn1" id="ref1">1</a></sup> "\".
+    </li>
+    <li> <b>  Main text editor: <a href="https://www.sublimetext.com/">Sublime Text.</a> </b> Essentially, this is an improved "notepad" in which you can edit files in different languages, such as HTML, LaTeX or Python. Unlike a plain notepad, text editors offer syntax highlighting (i.e., different classes of elements are written in different colours or fonts, e.g., comments are usually displayed in grey and italics). Moreover, snippets
+    and macros, either pre-installed or manually created, can be used to
+    reduce the number of keystrokes required for typing commands that are frequently used. For instance, in order to write the derivative of <em>x</em> w.r.t. <em>t</em> in LaTeX I simply have to type "der"+Tab+"x"+Tab+"t"+Tab, obtaining "\frac{\mathrm{d}x} {\mathrm{d}t}". 
+    <!-- For instance, in order to write a derivative in LaTeX I type "der" and press Tab, obtaining "\frac{\mathrm{d} } {\mathrm{d} }".  with the cursor located after the first "\mathrm{d}" -->
+    Additionally, one can compile files in certain languages or use git directly from the editor by installing a suitable package.
+    There are many well-known alternative editors you can try, such as Atom, Notepad++ or Visual Studio Code. 
+    Try-hards may also use vim or emacs as their main editor.
+    </li>
+    <li> <b> Alternative text editor: <a href="https://www.vim.org/about.php">Vim.</a> </b>
+    Unlike other text editors, Vim's interface is not based on menus or icons but on keyboard <a href="https://vim.rtorr.com/">shortcuts</a> and commands given in a terminal. It is usually used as a TUI from the terminal emulator directly, albeit a GUI called gVim is also available. Many developers use Vim as their main editor. It is highly customizable and you can create your own shortcuts and macros. Nevertheless, the learning curve is steeper than for other editors. I use Vim for small tasks, such as editing config files or creating short bash scripts. However, if you are brave and patient enough you could customize Vim as a complete LaTeX editor.
+    </li>
+    <li><b> Reference manager: <a href="https://www.zotero.org/">Zotero.</a> </b> You can store papers, books, etc. (both the metadata and the PDFs) and classify them in collections and subcollections. These collections can then be exported, for instance, in BibLaTeX. Moreover, Zotero Connector allows to save references directly from the browser (e.g., if you are in an arXiv or a MathScinet page). 
+      </li>
+    <li><b> PDF reader: <a href="https://okular.kde.org/">Okular.</a></b>
+    I don't think I have to explain what a PDF file is. 
+    In fact, Okular supports many other formats, such as EPub or DjVU.
+    It can be integrated with Sublime Text or other editors, so that when you Shift+click a part of the text, the corresponding LaTeX lines are opened. Several keyboard shortcuts are included by default, and one can easily customize them. It also includes annotation tools and supports digital signatures.
+    </li>
+    <li> <b> Backing-up and sharing files: <a href="https://git-scm.com/about">Git.</a> </b> Unlike Google Drive or other alternatives, Git, every time you commit or save the state of your project, basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot. To be efficient, if files have not changed, Git doesn’t store the file again, just a link to the previous identical file it has already stored. Who, when and what has been changed can be easily seen in a git repository. I use Git directly from the terminal. If you find it clearer, several GUI clients are also available. I currently host my Git repositories in <a href="https://github.com/">GitHub</a>, but I'm trying to use my own <a href="https://gitolite.com/gitolite/index.html">Gitolite</a> server.
+    </li>
+    <li><b> File manager: <a href="https://ranger.github.io/">ranger.</a></b>
+        It has vim key bindings which allow to accomplish file management tasks with a few keystrokes, albeit mouse input can also be employed.
+    </li>
+    <li><b> Mail client: <a href="https://www.thunderbird.net">Thunderbird.</a> </b> In order to manage several mail accounts, I find more efficient to use a client instead of numerous web clients. Furthermore, one can use additional features such as GPG encryption. If you are a TUI enthusiast, you can also try <a href="https://neomutt.org/">NeoMutt</a>.
+    </li>
+    <li><b>Web browser: <a href="https://www.mozilla.org/en-US/firefox">Firefox.</a> </b></li>
+</ul>
+
+All the programs above are free and <a href="https://opensource.org/docs/osd">open source</a>, except Sublime Text, which has a shareware license (i.e., you can use a free trial for unlimited time which has all the features of the paid version, but when you save a file sometimes a popup to remind you that you are evaluating ST will appear). I'm considering changing to an open source editor when I have some time to learn it and configure it (suggestions are welcome 😊).
+    
+
 
 <h3>Books</h3>
 
 <p>
-    I consider myself an enthusiastic reader. Nevertheless, there have been times in my life, specially when I was an undergraduate student, when my reading habits where seriously diminished. Fortunately, I have now recovered this habit. I plan to read at least 50 books along 2022 (of course a book is a quite imprecise unit of measure, since it may range from <em>The Little Prince</em> to <em>Don Quixote</em>).
+    I consider myself an enthusiastic reader. Nevertheless, there have been times in my life, specially when I was an undergraduate student, when my reading habits where seriously diminished. Fortunately, I have now recovered this habit. My goal is to read at least 50 books<sup><a href="#fn2" id="ref2">2</a></sup> along 2022.
+   
 </p>
 
 <p>
@@ -40,12 +90,20 @@
 </p>
 
 <ul>
-    <li>Héctor Abad Faciolince, <em>El olvido que seremos</em></li>
-    <li>Ernesto Castro, <em>Jantipa o Del morir</em></li>
-    <li>Marjane Satrapi, <em>Persépolis </em></li>
-    <li>Ryszard Kapuściński, <em>Ébano</em></li>
+    <li>Héctor Abad Faciolince, <em><a href="https://es.wikipedia.org/wiki/El_olvido_que_seremos">El olvido que seremos</a></em></li>
+    <li>Ernesto Castro, <em><a href="https://ernestocastro.com/en/libro/jantipa-o-del-morir/">Jantipa o Del morir</a></em></li>
+    <li>Ryszard Kapuściński, <em><a href="https://es.wikipedia.org/wiki/%C3%89bano_(Kapu%C5%9Bci%C5%84ski)">Ébano</a></em></li>
+    <li>Marjane Satrapi, <em><a href="https://es.wikipedia.org/wiki/Pers%C3%A9polis_(historieta)">Persépolis</a></em></li>
 </ul>
 
+<p>See also my <a href="https://www.goodreads.com/user/show/85173378-asier-l-pez-gord-n">Goodreads</a> profile.</p>
+
+
+
+<sup id="fn1">1. In the standard Spanish QWERTY keyboard, the backslash is written by "Ctrl + alt + º". Since LaTeX commands are preceded by a backslash, I found using this combination continuously quite uncomfortable. 
+</sup>
+<p></p>
+<sup id="fn2">2. Of course a book is a quite imprecise unit of measure, since it may range from <em>The Little Prince</em> to <em>Don Quixote</em>. </sup>
 
 </body>
 </html>
