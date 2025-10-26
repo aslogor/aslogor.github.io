@@ -1,0 +1,219 @@
+:root {
+   --genwidth: 850px ;
+   --navwidth: 175px ;
+   --fg: #ddd ;
+   --altfg: #242c34 ;
+   --fgemph: white ;
+   --bg: #111 ;
+   --altbg: #333 ;
+   --emph: #333 ;
+   --bordercolor: #555 ;
+   --limish: #0e0 ;
+}
+
+li img, h1 img, h2 img, h3 img, h4 img {
+    max-height: 1em;
+    max-width: 1em;
+}
+
+/* This affects the images in each recipe as it is inside a paragraph */
+p img{
+    max-height: 18em;
+    max-width: 18em;
+}
+
+html {
+    padding-top: 10px;
+    /* background-color: #191919; */
+    background: #343c44 ;
+    margin-bottom: 500px;
+}
+
+
+body {
+	margin: auto ;
+	color: white ;
+    max-width: 850px ;
+	/* background: #191919 ; */
+	background: #343c44 ;
+    padding: 10px ;
+    border-radius: 50px;
+	/*max-width: 800px ;*/
+	margin-bottom: 500px ;
+	 font-family: "Computer Modern";
+    /*font-family: "Ubuntu","open sans","Helvetica" ;*/
+    font-size: 20px ;
+	/*font-family: "Lucida Grande", "Lucida Mac", "sans-serif" ;*/
+	/*font-family: "sans-serif" ;*/
+	/*font-family: "Helvetica", "sans-serif" ;*/
+}
+
+.underline{border-bottom:1px solid #ffffff; width:100%; padding-bottom:5px;}
+
+.navbar {
+    background-color: var(--altbg);
+    color: #000 ;
+    top: 0;
+    left: 10px;
+    width: 100%;
+    font-size: 22px ;
+}
+
+.navbar li {
+    display: inline-block ;
+    padding: 30px 30px;
+    font-weight: 900;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+
+
+/* .navbar ul web{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navbar li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+} */
+
+.resright, .resmid {
+    max-height: 300px ;
+    max-width: 90% ;
+    margin: auto ;
+    display: block ;
+}
+
+@media (min-width: 55em) {
+
+	.resright, .disappear {
+		display: block ;
+		float: right;
+		padding: 20px ;
+		clear: both ;
+		max-height: 350px ;
+		max-width: 250px ;
+	}
+
+	.resmid {
+		max-height: 500px ;
+		width: auto ;
+	}
+
+a {
+	color: goldenrod ;
+	text-decoration: none;
+}
+
+a:visited {
+	color: cyan ;
+	text-decoration: none;
+}
+
+a:hover {
+    color: #06c
+    text-decoration: none;
+}
+
+h1 {
+	text-align: center ;
+}
+
+h2 {
+	color: cyan ;
+}
+
+footer {
+	text-align: center ;
+}
+
+img {
+	max-width: 600px ;
+	width: 100% ;
+	margin: auto ;
+	display: block ;
+}
+
+code {
+	overflow-wrap: break-word ;
+	color: lime ;
+}
+
+.logo {
+    width: 6em;
+}
+
+strong {
+    font-weight: bolder ;
+}
+
+
+
+
+
+/* nav {
+	box-shadow: 5px 5px 5px 5px rgba( 0, 0, 0, 0.3) ;
+}
+
+nav {
+	font-variant: small-caps ;
+}
+
+nav {
+	text-align: center ;
+	clear: both ;
+	background: var(--altbg) ;
+	border-radius: 20px ;
+	margin: auto ;
+	border: dashed 1px var(--bordercolor) ;
+	max-width: var(--genwidth) ;
+}
+
+nav {
+	max-width: var(--genwidth) ;
+}
+
+nav {
+	display: inline-block ;
+	list-style: none ;
+	background: var(--bg) ;
+	border-radius: 10px ;
+	padding: .5em ;
+	max-width: 7em ;
+}
+
+nav {
+	padding: 0;
+	margin: .5em;
+}
+
+nav {
+	background: steelblue ;
+	color: black ;
+	box-shadow: 2px 2px cyan ;
+}
+
+ */

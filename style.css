@@ -1,0 +1,225 @@
+:root {
+   --genwidth: 950px ;
+   --navwidth: 175px ;
+   --fg: #ddd ;
+   --altfg: #242c34 ;
+   --fgemph: white ;
+   --bg: #111 ;
+   --altbg: #333 ;
+   --emph: #333 ;
+   --bordercolor: #555 ;
+   --limish: #0e0 ;
+}
+
+li img, h1 img, h2 img, h3 img, h4 img {
+    max-height: 1em;
+    max-width: 1em;
+}
+
+/* This affects the images in each recipe as it is inside a paragraph */
+p img{
+    max-height: 18em;
+    max-width: 18em;
+}
+
+html {
+    padding-top: 10px;
+    background-color: #343c44;
+    margin-bottom: 500px;
+}
+
+
+body {
+	margin: auto ;
+	color: white ;
+    max-width: 950px ;
+	background: #343c44 ;
+    padding: 10px ;
+    border-radius: 50px;
+	/*max-width: 800px ;*/
+	/* margin-bottom: 500px ; */
+	margin-bottom: 20px ;
+	 font-family: "Computer Modern";
+    /*font-family: "Ubuntu","open sans","Helvetica" ;*/
+    font-size: 20px ;
+	/*font-family: "Lucida Grande", "Lucida Mac", "sans-serif" ;*/
+	/*font-family: "sans-serif" ;*/
+	/*font-family: "Helvetica", "sans-serif" ;*/
+}
+
+.underline{border-bottom:1px solid #ffffff; width:100%; padding-bottom:5px;}
+
+.navbar {
+    background-color: var(--altbg);
+    color: #000 ;
+    top: 0;
+    left: 10px;
+    /* width: 97.293%; */
+    /* width: 84%; */
+    /* font-size: 22px ; */
+    font-size: 20px;
+}
+
+/* .navbar li {
+    display: inline-block ;
+    padding: 30px 30px;
+    font-weight: 900;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+ */
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navbar li a:hover {
+  background-color: black;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+.resright, .resmid {
+    max-height: 300px ;
+    max-width: 90% ;
+    margin: auto ;
+    display: block ;
+}
+
+@media (min-width: 55em) {
+
+	.resright, .disappear {
+		display: block ;
+		float: right;
+		padding: 20px ;
+		clear: both ;
+		max-height: 350px ;
+		max-width: 250px ;
+	}
+
+	.resmid {
+		max-height: 500px ;
+		width: auto ;
+	}
+
+a {
+	color: goldenrod ;
+	text-decoration: none;
+}
+
+a:visited {
+	color: cyan ;
+	text-decoration: none;
+}
+
+a:hover {
+    color: #06c
+    text-decoration: none;
+}
+
+h1 {
+	text-align: center ;
+}
+
+h2 {
+	color: cyan ;
+}
+
+footer {
+	text-align: center ;
+}
+
+img {
+	max-width: 600px ;
+	width: 100% ;
+	margin: auto ;
+	display: block ;
+}
+
+code {
+	overflow-wrap: break-word ;
+	color: lime ;
+}
+
+.logo {
+    width: 6em;
+}
+
+strong {
+    font-weight: bolder ;
+}
+
+div.horizontalgap {
+  float: left;
+  overflow: hidden;
+  height: 1px;
+  width: 0px;
+}
+
+
+/* https://dev.to/gautamtiwari/how-to-make-a-responsive-hamburger-menu-using-css-only-3pg5 */
+
+ /* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #04AA6D;
+  color: white;
+} 
+
+
