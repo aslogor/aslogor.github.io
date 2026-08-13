@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git pull *)",
+      "Bash(git checkout *)",
+      "Bash(timeout 25 git fetch origin main)",
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(git fetch *)",
+      "Bash(git rebase *)",
+      "Bash(rm -f .git/index.lock && git rebase --abort && git status --short)",
+      "Bash(echo \"ABORT_EXIT:$?\")",
+      "Bash(rm -f .git/HEAD.lock .git/index.lock)",
+      "Bash(GIT_EDITOR=true git merge origin/main -m \"Merge remote-tracking branch 'origin/main'\")",
+      "Bash(git push *)"
+    ],
+    "additionalDirectories": [
+      "/Users/asier/Documents/Website/aslogor.github.io/.git"
+    ]
+  }
+}
