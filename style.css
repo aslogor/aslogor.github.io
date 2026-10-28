@@ -223,3 +223,15 @@ div.horizontalgap {
 } 
 
 
+
+.ipa {
+  font-family: "Charis SIL", "Doulos SIL", "Gentium Plus", "Gentium", "Noto Sans", "DejaVu Sans", "Segoe UI", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.play-audio {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0 2px;
+  font-size: inherit;
+}
